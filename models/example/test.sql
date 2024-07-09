@@ -1,1 +1,1 @@
-/* test scrpit*/
+select * from raw.jaffle_shop.customers
