@@ -21,5 +21,8 @@ sources:
             description: One record per customer.
           - name: customer_address
             description: One record per order. Includes cancelled and deleted orders.
+                        
+          - name: order_status
+            description: One record per order. Includes cancelled and deleted orders.
   
    
