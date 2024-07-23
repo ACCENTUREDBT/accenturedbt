@@ -11,5 +11,5 @@ select * ,'{{ invocation_id }}' as batch_id from {{ source('stripe', 'order_stat
 
 {% if is_incremental() %}
     -- this filter will only be applied on an incremental run
-    where STATUS_CHANGED_AT > (select max(STATUS_CHANGED_AT) from {{ this }}) 
+    where STATUS_CHANGED_AT = (select max(STATUS_CHANGED_AT) from {{ this }}) 
 {% endif %}
