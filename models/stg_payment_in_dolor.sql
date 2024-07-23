@@ -3,7 +3,8 @@
         orderid,
         paymentmethod,
         status,
-        {{marco_cents_dollor('amount')}} as amount_in_dollors,
+        amount,
+        {{marco_cents_dollor('amount')}} as dolloramount,
         created,
         _batched_at
 

@@ -1,4 +1,4 @@
-{{ config(store_failures = true) }}
+{{ config(store_failures =false ) }}
 
 select * from {{ ref('stg_payments') }}
-where amount = 1700
+where amount > 3000
